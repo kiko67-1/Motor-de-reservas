@@ -2,13 +2,18 @@
 <html lang="pt">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Index</title>
 </head>
 <body>
-    <h1>Bem-vindo à página inicial!</h1>
-    <p>Este é o conteúdo do index.html.</p>
-
-    <!-- Incluir o conteúdo de ola.html -->
-    {% include 'Motor-de-reservas/Quinta da Mesquita - Turismo Rural.html' %}
+    <div id="content"></div>
+    <script>
+        fetch('Quinta da Mesquita - Turismo Rural.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('content').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading content:', error));
+    </script>
 </body>
 </html>
