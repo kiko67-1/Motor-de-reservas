@@ -106,6 +106,71 @@
 </body>
 
 <styles>
+   #dm * {
+    -webkit-tap-highlight-color: transparent;
+}
+DIV.dmBody {
+    padding: 0;
+    clear: both;
+}
+.dmInner * {
+    -webkit-font-smoothing: antialiased;
+}
+* {
+    border: 0 solid #333;
+    scrollbar-arrow-color: #fff;
+    scrollbar-track-color: #f2f2f2;
+    scrollbar-face-color: silver;
+    scrollbar-highlight-color: silver;
+    scrollbar-3dlight-color: silver;
+    scrollbar-shadow-color: silver;
+    scrollbar-darkshadow-color: silver;
+    scrollbar-width: 12px;
+}
+*, :after, :before {
+    box-sizing: border-box;
+}
+user agent stylesheet
+div {
+    display: block;
+    unicode-bidi: isolate;
+}
+#dm .dmRestaurantMenu .menuItemBox, #dm .dmform .dmforminput label, #dm .ecwid *, #dm div.dm-title h6, #dm div.dmContent h6, #dm div.dmFooter h6, #dm div.dmInner, #dm div.dmInner .dmRespCol, .dmGeoLocation a span.dmGeoMLocItemDetails, .dmGeoLocation a span.dmGeoMLocItemTitle, .dmPhotoGallery p.caption-text, .dmPrettyList .itemName, .dmPrettyList .listText, .dmRestaurantMenu .menuItemDesc, .dmRestaurantMenu .menuItemName, .dmRestaurantMenu .menuItemPrice {
+    font-size: 16px;
+}
+#dm .dmRespCol div.dmNewParagraph, #dm .dmRestaurantMenu .menuItemBox, #dm .dmform .dmforminput label, #dm .ecwid .ec-store, #dm div.dm-title h6, #dm div.dmContent h6, #dm div.dmFooter h6, #dm div.dmInner, #dm div.dmInner .dmRespCol, .dmGeoLocation a span.dmGeoMLocItemDetails, .dmGeoLocation a span.dmGeoMLocItemTitle, .dmPhotoGallery .caption-text.caption-text, .dmPrettyList .itemName, .dmPrettyList .listText, .dmRestaurantMenu .menuItemDesc, .dmRestaurantMenu .menuItemName, .dmRestaurantMenu .menuItemPrice, .map-popup-description {
+    font-family: "Open Sans", "Open Sans Fallback";
+}
+#dm .dmRestaurantMenu .menuItemBox, #dm .dmform .dmforminput label, #dm div.dmInner, #dm div.dmInner .dmRespCol, .dmGeoLocation a span.dmGeoMLocItemDetails, .dmGeoLocation a span.dmGeoMLocItemTitle, .dmPrettyList .itemName, .dmPrettyList .listText, .dmRestaurantMenu .menuItemDesc, .dmRestaurantMenu .menuItemName, .dmRestaurantMenu .menuItemPrice {
+    color: #888;
+}
+#dm .dmform .dmforminput label, #dm .ecwid *, #dm div.dmInner, #dm div.dmInner .dmRespCol {
+    font-weight: 300;
+}
+.dmInner {
+    font-size: 16px;
+    background: #fff;
+    color: #666;
+}
+.dmOuter {
+    word-wrap: break-word;
+}
+#dmRoot {
+    text-decoration-skip-ink: none;
+}
+body {
+    width: 100%;
+    overflow: hidden;
+    -webkit-text-size-adjust: 100% !important;
+    -ms-text-size-adjust: 100% !important;
+    background-color: #eee;
+}
+@media (min-width: 1025px) {
+    :root {
+        --btn-text-font-size: 14px;
+    }
+}
+:root {
     --btn-text-direction: ltr;
     --btn-border-r-color: var(--btn-border-color);
     --btn-border-l-color: var(--btn-border-color);
@@ -142,21 +207,17 @@
     --btn-hover-text-font-weight: var(--btn-text-font-weight);
     --btn-hover-text-decoration: var(--btn-text-decoration);
     --btn-hover-text-font-style: var(--btn-text-font-style);
-    --btn-text-font-size: 14px;
-    -webkit-text-size-adjust: 100%!important;
-    text-decoration-skip-ink: none;
-    word-wrap: break-word;
-    font-weight: 300;
-    color: #888;
-    font-family: "Open Sans","Open Sans Fallback";
-    font-size: 16px;
+}
+html {
+    font-family: Source Sans Pro;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+*, :after, :before {
     box-sizing: border-box;
-    border: 0 solid #333;
-    -webkit-font-smoothing: antialiased;
-    -webkit-tap-highlight-color: transparent;
-    position: fixed!important;
-    z-index: 101;
-    width: 100%;
-    min-width: 768px;
+}
+*, :after, :before {
+    box-sizing: border-box;
+}
 </styles>
   
